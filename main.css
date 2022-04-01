@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none !important;
+    font-size: 20px !important;
+ 
+}
+html{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+
+}
+.icon{
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+.header-logo{
+    /* height: 65px;
+    width: 65px; */
+    font-size: 70px;
+    color: dodgerblue;
+    animation: hh 4s infinite linear;
+}
+@keyframes hh {
+    0%{
+       transform:rotate(0deg)
+    }
+    100%{
+        transform:rotate(360deg)
+    }
+}
+i.fa-light.fa-atom-simple{
+    height: 70px;
+    width: 70px;
+    background-color: red;
+}
+.header{
+    /* animation: hh 4s infinite linear; */
+    position: fixed;
+    font-size: 20px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    border-bottom: 2px solid rgba(233, 233, 233, 0.582);
+    background-color: burlywood;
+   
+}
+.header .log:hover{
+    color: red;
+}
+.list_item{
+    line-height: 100%;
+    margin: 30px;
+    cursor: pointer;
+    list-style-type: none !important;
+    
+}
+.list_item:hover{
+    color: red;
+}
+.header-item ,.header-log{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.header-log .log{
+    margin: 10px;
+    cursor: pointer;
+}
+.menu {grid-area: menu ; }
+.main {grid-area: main ; }
+.ads {grid-area: ads ; }
+.footer {grid-area: footer ; }
+
+.content{
+    display: grid;
+    grid-template-areas:
+    'menu main main main ads ads'
+    'menu footer footer footer footer footer' ;
+    gap: 10px;
+    padding: 10px;
+}
+.content{
+    padding-top: 75px;
+}
+.content > div{
+    
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+ 
+    border: 2px solid rgba(233, 233, 233, 0.582);
+}
+.content .content-item{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    margin: 5px;
+}
+.img_ads>img{
+    width: 100%;
+    height: auto;
+}
+.ok>img{
+    width: 300px;
+    /* float: left; */
+    /* margin: 20px; */
+}
+/* add */
+#dark:hover{
+    background-color: red;
+}
+.course{
+    margin: 10px;
+    padding: 5px;
+}
+.course:hover{
+    color: red;
+    cursor: pointer;
+
+}
